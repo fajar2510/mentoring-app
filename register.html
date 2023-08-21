@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      body {
+        font-family: "Fira Mono", sans-serif;
+        /* border: 1px solid greenyellow; */
+      }
+    </style>
+    <title>Login - Fokusin</title>
+  </head>
+  <body>
+    <main class="bg-cyan-300 min-h-screen py-8 px-[12rem]">
+      <div
+        class="flex flex-col items-center justify-between mx-[10] border border-black shadow-lg bg-white rounded-lg h-[39rem] py-8 px-24"
+      >
+        <h1 class="text-black text-xl font-bold">
+          Halo Selamat Datang di Fokusin
+        </h1>
+        <h2 class="text-black text-md font-semibold">Ayo daftar sekarang</h2>
+
+        <div class="flex flex-row gap-[2rem] items-center justify-between">
+          <div
+            class="bg-white border border-black rounded-lg p-10 shadow-[5px_5px_0px_0px_rgba(0,0,0)]"
+          >
+            <div class="flex items-center justify-center">
+              <form action="index.html">
+                <div class="mb-4 flex flex-col gap-2">
+                  <label
+                    for="nama"
+                    class="font-bold text-md text-black"
+                    placeholder="Nama lengkap"
+                    >Nama</label
+                  >
+                  <input
+                    type="text"
+                    class="px-3 py-2.5 border border-slate-400 rounded-lg"
+                    placeholder="John Wellson"
+                  />
+                </div>
+                <div class="mb-4 flex flex-col gap-2">
+                  <label
+                    for="email"
+                    class="font-bold text-md text-black"
+                    placeholder="Email"
+                    >Email</label
+                  >
+                  <input
+                    type="text"
+                    class="px-3 py-2.5 border border-slate-400 rounded-lg"
+                    placeholder="john@mail.com"
+                  />
+                </div>
+                <div class="mb-4 flex flex-col gap-2">
+                  <label
+                    for="password"
+                    class="font-bold text-md text-black"
+                    placeholder="Password"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="px-3 py-2.5 border border-slate-400 rounded-lg"
+                    placeholder="********"
+                  />
+                </div>
+
+                <div class="flex flex-col items-center justify-center">
+                  <a
+                    href="index.html"
+                    class="w-full text-center my-4 px-4 py-2 bg-black text-white shadow-lg rounded-lg hover:bg-white hover:text-black hover:border hover:border-black"
+                  >
+                    Register
+                  </a>
+                  <a
+                    class="text-slate-600 font-xs text-sm hover:font-semibold"
+                    href="login.html"
+                    >Sudah punya akun?</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+          <figure class="">
+            <img class="h-[27rem]" src="assets//login-image.png" alt="" />
+          </figure>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
